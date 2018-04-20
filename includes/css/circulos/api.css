@@ -1,0 +1,349 @@
+/*****************general**************************/
+/*FONTS*/
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url(/includes/fonts/SourceSansPro/SourceSansPro-Regular.ttf);
+}
+
+/*RESPONSIVE BACKGROUND-IMAGE*/
+body {
+  background-image: url("/includes/images/fondo_nl3.jpg");
+  font-family: SourceSansPro-Regular !important;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  /* Makes the image fixed in the viewport so that it doesn't move when
+     the content height is greater than the image height */
+  background-attachment: relative;
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+   /* Ocupa toda la altura*/
+  height: 100vh;
+
+}
+
+p {
+    margin-bottom: 0rem;
+}
+
+/***************************NAV BAR*********************************/
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  height: 80px;
+  z-index: 9999;
+  /*position: absolute;*/
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  -webkit-box-shadow: 0 0px 0px 0 , 0 0px 0px 0 , 0 0px 0px 0px;
+  box-shadow: 0 0px 0px 0 , 0 0px 0px 0 , 0 0px 0px 0px;
+
+}
+
+/*****************Menu de circulos**************************/
+
+#center {
+  position: absolute;
+}
+
+.field {
+  position: absolute;
+}
+
+/*****************Quiz cards**************************/
+.inicio {
+
+  margin-top: 0px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.card {
+  margin: 0px !important;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
+
+}
+.card span.card-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+.card .card-image {
+  position: relative;
+  overflow: hidden;
+  border-left: 1px solid #720030;
+  border-right: 1px solid #720030;
+
+}
+.card .card-image img {
+  border-radius: 2px 2px 0 0;
+  background-clip: padding-box;
+  position: relative;
+
+}
+
+.card .card-image span.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+
+}
+
+.card .card-content {
+  padding: 16px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+
+  border-left: 1px solid #720030;
+  border-right: 1px solid #720030;
+}
+
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+}
+
+.card .card-content span.card-title {
+  line-height: 48px;
+
+}
+
+#imagen {
+  height: 100%;
+  background-size: cover;
+}
+
+/*****************acordeon**************************/
+#accordion {
+  margin-top: 158px !important;
+}
+
+/* barras superior e inferior del acordeon*/
+.ct {
+  height: 52px;
+  margin-top: 20px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: white;
+  color: #720030;
+  font-size: 33px;
+  padding-top: 0px !important;
+  text-align: center;
+  border: solid 1px;
+}
+
+.ct a {
+  color: #720030;
+}
+
+.ct a:hover {
+  color: #C2185B;
+}
+
+.cardtitle {
+  height: 140px;
+  margin-top: 74px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: white;
+  color: #720030;
+  font-weight: bold;
+  font-size: 33px;
+  padding-top: 0px !important;
+  text-align: center;
+}
+
+.celdaMenu {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color:rgba(240, 240, 240, 0.8);
+  border-bottom: 0.5px solid grey;
+  border-left: 1px solid #720030;
+  border-right: 1px solid #720030;
+  cursor:pointer;
+}
+
+
+.txtCeldaMenu{
+  font-size: 1.8vw;
+  position: relative;
+}
+
+
+/*****************Mobile**************************/
+.celdaMenuMobile {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color:rgba(240, 240, 240, 0.8);
+  border-bottom: 0.5px solid grey;
+  border-left: 1px solid #720030;
+  border-right: 1px solid #720030;
+
+}
+
+.imgCeldaMenuMobile{
+  position: relative;
+  top: 50%;
+}
+
+.imgCeldaSubMenuMobile{
+  position: relative;
+  /*top: 50%;*/
+  border:1px solid #720030;
+}
+
+.txtCeldaMenuMobile{
+  font-size: 3.5vw;
+  position: relative;
+  /*top: 50%;*/
+}
+
+/*****************************************************MEDIA QUERIES*******************************************************/
+
+@media (max-width: 1000px) {
+  .navbar .login-btn {
+    right: 75px;
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url("/includes/images/moviles/fondo_nl2.jpg");
+    background-repeat: repeat-y;
+  }
+
+  .logo-contenedor {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .containerTxtCeldaMenuMobile {
+    margin-top:10px;
+  }
+
+  #accordion {
+    margin-top: 100px !important;
+  }
+
+  #eje {
+    font-size: 15px;
+  }
+
+  #accion {
+    font-size: 15px;
+  }
+
+  .cardtitle {
+    height: 100px;
+    margin-top: 74px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+    color: #720030;
+    font-weight: bold;
+    font-size: 33px;
+    padding-top: 0px !important;
+    text-align: center;
+  }
+
+  #sep {
+    content:url("/includes/images/moviles/sep2.jpg");
+  }
+
+  #ipn {
+    content:url("/includes/images/moviles/ipn2.jpg");
+  }
+
+}
+
+/* ------ iPad -------*/
+@media only screen and (max-width: 768px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url("/includes/images/moviles/fondo_nl2.jpg");
+    background-repeat: repeat-y;
+  }
+
+  #accordion {
+     margin-top: 100px !important;
+     padding: 10px;
+  }
+
+  .containerTxtCeldaMenuMobile {
+    margin-top:60px;
+  }
+
+  .txtCeldaMenuMobile{
+    font-size: 4vw;
+  }
+
+  #sep {
+    content:url("/includes/images/moviles/sep2.jpg");
+    width: 24% !important;
+  }
+
+  #ipn {
+    content:url("/includes/images/moviles/ipn2.jpg");
+    width: 38% !important;
+    margin-right: 18px;
+  }
+
+}
+
+/* ---- iPhone 6,7,8 ---- */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url("/includes/images/moviles/fondo_nl2.jpg");
+    background-repeat: repeat-y;
+  }
+
+  #accordion {
+     margin-top: 100px !important;
+     padding: 10px;
+  }
+
+}
+
+/* ---- iPhone X ---- */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+     background-image: url("/includes/images/moviles/fondo_nl2.jpg");
+    background-repeat: repeat-y;
+  }
+
+  #accordion {
+     margin-top: 100px !important;
+     padding: 10px;
+  }
+
+  #eje {
+     font-size: 15px;
+  }
+
+  #accion {
+     font-size: 15px;
+  }
+
+}
+

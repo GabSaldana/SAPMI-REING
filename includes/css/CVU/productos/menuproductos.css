@@ -1,0 +1,114 @@
+
+/*WRAPPER*/
+.gray-bg{
+	background-color: #FAFAFA;
+}
+
+
+
+/*Estilos seccion Clasificacion*/
+.tarjetaClasificacion{
+
+	/*background-color: #37537D;*/
+	background-color: #375390;
+	border: 1px solid #FFFFFF;
+	color:#FFFFFF;
+	padding: 5px;
+	height: 65px;
+}
+
+.textoClasificacion{
+
+	  font-size: 15px;
+	  padding: 0px;
+	  margin: 5px;
+	  
+}
+
+.tarjetaClasificacion:hover{
+
+	background-color: #F7AB5A;
+
+}
+
+.center{
+
+	box-shadow: 0px 0px 3px #888888;
+	padding: 170px;
+	margin: 40px;
+}
+
+/*Estilos seccion Filtros*/
+
+.tarjetaFiltro{
+	
+	box-shadow: 0px 3px 3px #888888;
+	background-color: #FEFE8F;
+	width: 100%;
+	color: #37474F;
+	height: auto;
+	padding: 5px;
+
+}
+
+.tarjetaFiltro:hover {
+
+	width: 100%;
+	box-shadow: 0px 10px 8px #888888;
+	color: #37474F;
+}
+/*Estilos seccion Seleccion*/
+
+
+.textoseleccion{
+
+	background-color: #F97E7E;
+	color: #FFF;
+	padding: 5px;
+	height: 45px;/*ALTURA TITULOS SELECCIONES*/
+	overflow: hidden;
+}
+
+.tarjetaProducto{
+
+	padding: 0px;
+	box-shadow: 0px 2px 3px #888888;
+}
+
+.tarjetaProducto:hover{
+
+	background-color: #56B3F2;
+	color: #fff;
+	box-shadow: 0px 10px 8px #888888;
+}
+
+.descProducto{
+
+	margin: 5px;
+	height: 80px;/*tamaño fijo para el area de descripcion de las tarjetas de seleccion*/
+	overflow: auto;	
+	font-size: 90%;
+}
+
+
+.image-circle{
+
+	color: #FFF;
+	font-size: 15px;
+}
+
+
+.outter{
+	border: 1px solid #FFFFFF;
+  	border-radius: 50%;
+  	padding: 7px;
+  	height: 35PX;
+  	width: 35PX;
+  	margin: 10px;
+  	/*background-color: #4DB6AC;*/
+  	background-color: #17B294;
+  	border-color: #17B294;
+}
+.ajustado{
+	margin-bottom: 10px !important; 
+}

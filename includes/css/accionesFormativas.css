@@ -1,0 +1,410 @@
+<style type="text/css">
+    button.dim {
+        color: #777777!important;
+    }
+    th {
+        text-align: center!important;
+    }
+    .file .file-name {
+        text-align: center!important;
+    }
+    /*.cursor{
+    	cursor: pointer!important;
+    }
+    */
+    .ibox-title{
+    	color:white!important;
+    	background-color:#7F2554!important;
+    }
+    .ml5 {
+        margin-left: 5px!important;
+    }
+    .mt5 {
+        margin-top: 5px!important;
+    }
+    .mt15{
+        margin-top: 15px!important;
+    }
+    .m-b {
+        margin-bottom: 0px!important;
+    }
+    .small, small {
+        font-size: 100%!important;
+    }
+    .wrapper-content {
+        padding: 20px 10px 0px!important;
+    }
+    .item-tittle {
+        color: inherit !important;
+        display: block!important;
+        font-size: 24px!important;
+    }
+    body #side-menu > .nav-header {
+        height: 155px!important;
+    }
+    body.mini-navbar #side-menu > .nav-header {
+        height: 60px!important;
+    }
+    .btn-navbar-guia {
+        width: 38px;
+        height: 30px;
+        padding: 0px 0px !important;
+        margin-top: -5px;
+        font-size: 16px !important;
+    }
+
+    /****Clases de Inspinia para Acciones Formativas****/
+
+    .sidebar-collapse > .nav > li.active {
+        border-left: 4px solid #7f2554!important;
+        background: #293846!important;
+    }
+    .navbar-top-links > li > a:hover {
+        border-left: 0px!important;
+        color: #7F2554 !important;
+        background: #ffffff!important;
+    }
+    .navbar-default .special_link a {
+        background: #7F2554!important;
+        color: white!important;
+    }
+    .navbar-default .special_link a span.label {
+        background: #fff!important;
+        color: #7F2554!important;
+    }
+    .navbar-default .landing_link a:hover {
+        background: #7F2554 !important;
+        color: white!important;
+    }
+    body.mini-navbar .nav-header {
+        padding: 0!important;
+        background-color: #7F2554!important;
+    }
+    .top-navigation .navbar-nav .dropdown-menu > .active > a {
+        background: white!important;
+        color: #7F2554!important;
+        font-weight: bold!important;
+    }
+    .top-navigation .nav > li a:hover,
+    .top-navigation .nav > li a:focus {
+        background: #fff!important;
+        color: #7F2554!important;
+    }
+    .top-navigation .nav > li.active > a {
+        color: #7F2554!important;
+    }
+    .top-navigation .navbar-brand {
+        background: #7F2554!important;
+        color: #fff!important;
+        padding: 15px 25px!important;
+    }
+    .navbar-toggle {
+        background-color: #7F2554!important;
+        color: #fff!important;
+        padding: 6px 12px!important;
+        font-size: 14px!important;
+    }
+    .btn-primary.btn-outline {
+        color: #7F2554!important;
+    }
+    .btn-info.btn-outline {
+        color: #7F2554!important;
+    }
+    .btn-primary {
+        background-color: #7F2554!important;
+        border-color: #7F2554!important;
+        color: #FFFFFF!important;
+    }
+    .btn-info {
+        background-color: #7F2554!important;
+        border-color: #7F2554!important;
+        color: #FFFFFF!important;
+    }
+    .btn-info:hover,
+    .btn-info:focus,
+    .btn-info:active,
+    .btn-info.active,
+    .open .dropdown-toggle.btn-info {
+        background-color: #7F2554!important;
+        border-color: #7F2554!important;
+        color: #FFFFFF!important;
+    }
+    .btn-link:hover,
+    .btn-link:focus,
+    .btn-link:active,
+    .btn-link.active,
+    .open .dropdown-toggle.btn-link {
+        color: #7F2554!important;
+        text-decoration: none!important;
+    }
+    button.btn-primary.dim {
+        box-shadow: inset 0px 0px 0px #7F2554, 0px 5px 0px 0px #7F2554, 0px 10px 5px #999999!important;
+    }
+    button.btn-primary.dim:active {
+        box-shadow: inset 0px 0px 0px #7F2554, 0px 2px 0px 0px #7F2554, 0px 5px 3px #999999!important;
+    }
+    .label-primary,
+    .badge-primary {
+        background-color: #7F2554!important;
+        color: #FFFFFF!important;
+    }
+    .label-info,
+    .badge-info {
+        background-color: #7F2554!important;
+        color: #FFFFFF!important;
+    }
+    .onoffswitch-label {
+        display: block!important;
+        overflow: hidden!important;
+        cursor: pointer!important;
+        border: 2px solid #7F2554!important;
+        border-radius: 2px!important;
+    }
+    .onoffswitch-inner:before {
+        content: "  SÍ"!important;
+        /*content: "Activar"!important;*/
+        padding-left: 10px!important;
+        background-color: #7F2554!important;
+        color: #FFFFFF!important;
+    }
+    .onoffswitch-switch {
+        width: 20px!important;
+        margin: 0px!important;
+        background: #FFFFFF!important;
+        border: 2px solid #7F2554!important;
+        border-radius: 2px!important;
+        position: absolute!important;
+        top: 0!important;
+        bottom: 0!important;
+        right: 44px!important;
+        -moz-transition: all 0.3s ease-in 0s!important;
+        -webkit-transition: all 0.3s ease-in 0s!important;
+        -o-transition: all 0.3s ease-in 0s!important;
+        transition: all 0.3s ease-in 0s!important;
+    }
+    .fc-state-active {
+        background-color: #7F2554!important;
+        border-color: #7F2554!important;
+        color: #ffffff!important;
+    }
+    .fc-event,
+    .fc-agenda .fc-event-time,
+    .fc-event a {
+        padding: 4px 6px!important;
+        background-color: #7F2554!important;
+        /* background color */
+        border-color: #7F2554!important;
+        /* border color */
+    }
+    a.list-group-item.active,
+    a.list-group-item.active:hover,
+    a.list-group-item.active:focus {
+        background-color: #7F2554!important;
+        border-color: #7F2554!important;
+        color: #FFFFFF!important;
+        z-index: 2!important;
+    }
+    .pace .pace-progress {
+        background: #7F2554!important;
+        position: fixed!important;
+        z-index: 2000!important;
+        top: 0!important;
+        right: 100%!important;
+        width: 100%!important;
+        height: 2px!important;
+    }
+    .form-control:focus,
+    .single-line:focus {
+        border-color: #7F2554 !important;
+    }
+    .has-success .form-control {
+        border-color: #7F2554!important;
+    }
+    .has-success .control-label {
+        color: #7F2554!important;
+    }
+    .noUi-connect {
+        background: none repeat scroll 0 0 #7F2554!important;
+        box-shadow: none!important;
+    }
+    .onoffswitch-label {
+        display: block!important;
+        overflow: hidden!important;
+        cursor: pointer!important;
+        border: 2px solid #7F2554!important;
+        border-radius: 3px!important;
+    }
+    .onoffswitch-inner:before {
+        content: "  SÍ"!important;
+        /*content: "Activar"!important;*/
+        padding-left: 7px!important;
+        background-color: #7F2554!important;
+        color: #FFFFFF!important;
+    }
+    .onoffswitch-switch {
+        display: block!important;
+        width: 18px!important;
+        margin: 0px!important;
+        background: #FFFFFF!important;
+        border: 2px solid #7F2554!important;
+        border-radius: 3px!important;
+        position: absolute!important;
+        top: 0!important;
+        bottom: 0!important;
+        right: 36px!important;
+        -moz-transition: all 0.3s ease-in 0s!important;
+        -webkit-transition: all 0.3s ease-in 0s!important;
+        -o-transition: all 0.3s ease-in 0s!important;
+        transition: all 0.3s ease-in 0s!important;
+    }
+    .toast {
+        background-color: #7F2554!important;
+    }
+    .toast-success {
+        background-color: #7F2554!important;
+    }
+    .inspinia-notify.alert-info {
+        border-left: 6px solid #7F2554!important;
+    }
+    .forum-item.active .fa {
+        color: #7F2554!important;
+    }
+    .forum-item.active a.forum-item-title {
+        color: #7F2554!important;
+    }
+    .vertical-date small {
+        color: #7F2554!important;
+        font-weight: 400!important;
+    }
+    .jvectormap-zoomin,
+    .jvectormap-zoomout,
+    .jvectormap-goback {
+      position: absolute!important;
+      left: 10px!important;
+      border-radius: 3px!important;
+      background: #7F2554!important;
+      padding: 3px!important;
+      color: white!important;
+      cursor: pointer!important;
+      line-height: 10px!important;
+      text-align: center!important;
+      box-sizing: content-box!important;
+    }
+    .branding {
+        float: left!important;
+        color: #FFFFFF!important;
+        font-size: 18px!important;
+        font-weight: 600!important;
+        padding: 17px 20px!important;
+        text-align: center!important;
+        background-color: #7F2554!important;
+    }
+    .navy-bg {
+        background-color: #7F2554!important;
+        color: #ffffff!important;
+    }
+    .panel-primary {
+        border-color: #7F2554!important;
+    }
+    .panel-primary > .panel-heading {
+        background-color: #7F2554!important;
+        border-color: #7F2554!important;
+    }
+    .progress-bar {
+        background-color: #7F2554!important;
+    }
+    .text-navy {
+        color: #7F2554!important;
+    }
+    .category-list li a .text-navy {
+        color: #7F2554!important;
+    }
+    .faq-question {
+        font-size: 18px!important;
+        font-weight: 600!important;
+        color: #7F2554!important;
+        display: block!important;
+    }
+    .issue-tracker .btn-link {
+        color: #7F2554!important;
+    }
+    .agile-list li.success-element {
+        border-left: 3px solid #7F2554!important;
+    }
+    .open-small-chat {
+        height: 38px!important;
+        width: 38px!important;
+        display: block!important;
+        background: #7F2554!important;
+        padding: 9px 8px!important;
+        text-align: center!important;
+        color: #fff!important;
+        border-radius: 50%!important;
+    }
+    .open-small-chat:hover {
+        color: white!important;
+        background: #7F2554!important;
+    }
+    .small-chat-box .content .chat-message.active {
+        background: #7F2554!important;
+        color: #fff!important;
+    }
+    .spin-icon {
+        background: #7F2554!important;
+        position: absolute!important;
+        padding: 7px 10px 7px 13px!important;
+        border-radius: 20px 0px 0px 20px!important;
+        font-size: 16px!important;
+        top: 0!important;
+        left: 0px!important;
+        width: 40px!important;
+        color: #fff!important;
+        cursor: pointer!important;
+    }
+    .default-skin {
+        font-weight: 600!important;
+        background: #7F2554!important;
+    }
+    .selectzindex{
+		z-index: 10000 !important;
+	}
+	.select2-container--default .select2-results>.select2-results__options{
+    max-height: 30vh !important;
+	}
+	/* Select2 custom styles */
+	.select2-container--default .select2-selection--single,
+	.select2-container--default .select2-selection--multiple {
+	  border-color: #e7eaec !important;
+	}
+	.select2-container--default.select2-container--focus .select2-selection--single,
+	.select2-container--default.select2-container--focus .select2-selection--multiple {
+	  border-color: #1ab394 !important;
+	}
+	.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	  background-color: #1ab394 !important;
+	}
+	.select2-container--default .select2-search--dropdown .select2-search__field {
+	  border-color: #e7eaec !important;
+	}
+	.select2-dropdown {
+	  border-color: #e7eaec !important;
+	}
+	.select2-dropdown input:focus {
+	  outline: none !important;
+	}
+	.select2-selection {
+	  outline: none !important;
+	}
+	.ui-select-container.ui-select-bootstrap .ui-select-choices-row.active > a {
+	  background-color: #1ab394 !important;
+	}
+	.select2-container--default .select2-selection--single {    
+    border-radius: 0px !important;    
+	}
+	.select2-container .select2-selection--single {    
+    height: inherit !important;    
+	}
+	.folder-list li {    
+    padding: 5px 0px;
+	}
+</style>

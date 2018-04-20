@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'planeacion2018';
+  src:  url('/includes/fonts/planeacion2018.eot?jaxql');
+  src:  url('/includes/fonts/planeacion2018.eot?jaxql#iefix') format('embedded-opentype'),
+    url('/includes/fonts/planeacion2018.ttf?jaxql') format('truetype'),
+    url('/includes/fonts/planeacion2018.woff?jaxql') format('woff'),
+    url('/includes/fonts/planeacion2018.svg?jaxql#planeacion2018') format('svg'),
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'planeacion2018' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-corazon:before {
+  content: "\e900";
+}
+.icon-mundo:before {
+  content: "\e901";
+}
+.icon-mano:before {
+  content: "\e902";
+}
+.icon-medalla:before {
+  content: "\e903";
+}
+.icon-engrane:before {
+  content: "\e904";
+}
+.icon-cabeza:before {
+  content: "\e905";
+}
+.icon-balanza:before {
+  content: "\e906";
+}
+.icon-alumno:before {
+  content: "\e907";
+}
+.icon-docente:before {
+  content: "\e908";
+}

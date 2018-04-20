@@ -1,0 +1,1 @@
+<cfimage action="writeToBrowser" source="#request.qr#" format="png"> 

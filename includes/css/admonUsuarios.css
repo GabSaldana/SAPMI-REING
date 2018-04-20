@@ -1,0 +1,315 @@
+<style type="text/css">
+	div.mb15 {
+	    margin-bottom: 15px !important;
+	}
+	th {
+	    text-align: center;
+	}
+	.ibox-title{
+		     background: -moz-linear-gradient(268deg, rgba(255,249,230,1) 0%, rgba(250,243,220,1) 10%, rgba(210,197,139,1) 100%); /* ff3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,249,230,1)), color-stop(10%, rgba(250,243,220,1)), color-stop(100%, rgba(210,197,139,1))); /* safari4+,chrome */
+			background: -webkit-linear-gradient(268deg, rgba(255,249,230,1) 0%, rgba(250,243,220,1) 10%, rgba(210,197,139,1) 100%); /* safari5.1+,chrome10+ */
+			background: -o-linear-gradient(268deg, rgba(255,249,230,1) 0%, rgba(250,243,220,1) 10%, rgba(210,197,139,1) 100%); /* opera 11.10+ */
+			background: -ms-linear-gradient(268deg, rgba(255,249,230,1) 0%, rgba(250,243,220,1) 10%, rgba(210,197,139,1) 100%); /* ie10+ */
+			background: linear-gradient(182deg, rgba(255,249,230,1) 0%, rgba(250,243,220,1) 10%, rgba(210,197,139,1) 100%); /* w3c */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF9E6', endColorstr='#D2C58B',GradientType=0 ); /* ie6-9 */ 
+		color:#3a1a20 !important;
+		border-color:#f5f5ea!important;
+	}
+	.ibox-content{
+		background-color:#fffff !important;
+	}
+	.btn-primary{
+		color:white;
+		background-color:#8e5c64 !important;
+		border-color:#8e5c64 !important;
+	}	
+	.btn-primary.btn-outline{
+		color:#8e5c64!important;
+		border:#8e5c64 !important;
+		background-color:#ffffff !important;
+	}
+	.btn-primary.btn-primary.dim{
+		background-color:#8e5c64 !important;
+		border:#8e5c64 !important;	color:white;
+	  	box-shadow: inset 0px 0px 0px #7e4c54, 0px 5px 0px 0px #7e4c54, 0px 10px 5px #999999!important;
+	}
+	.modal-content{
+		background-color:#fbfaf8 !important;
+	}
+	.modal-body{
+		background-color:#fafbfa !important;
+	}
+	.gray-bg{
+		background-color:#f5f5ea !important;
+		border:#fcfbf9 !important;
+	}
+	.badge-primary{
+		background-color:#8e5c64 !important;
+		border:#8e5c64 !important;
+	}
+	.ml5 {
+	    margin-left: 5px;
+	}
+	.mr5 {
+        margin-right: 5px;
+    }
+	.mt5 {
+        margin-top: 5px;
+    }
+	.lft-btn{
+	    float: left;
+	}
+	#mdl-xl{
+		width: 80%
+	}
+	.nav-header{
+		background-color:#8e5c64 !important;
+		border:#c1abac !important;
+	}
+	body{
+		color: #864b48!important;
+	    background: -moz-linear-gradient(182deg, rgba(255,249,230,1) 10%, rgba(255,249,230,1) 83%, rgba(210,197,139,1) 100%); /* ff3.6+ */
+	    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(210,197,139,1)), color-stop(17%, rgba(255,249,230,1)), color-stop(90%, rgba(255,249,230,1))); /* safari4+,chrome */
+	    background: -webkit-linear-gradient(182deg, rgba(255,249,230,1) 10%, rgba(255,249,230,1) 83%, rgba(210,197,139,1) 100%); /* safari5.1+,chrome10+ */
+	    background: -o-linear-gradient(182deg, rgba(255,249,230,1) 10%, rgba(255,249,230,1) 83%, rgba(210,197,139,1) 100%); /* opera 11.10+ */
+	    background: -ms-linear-gradient(182deg, rgba(255,249,230,1) 10%, rgba(255,249,230,1) 83%, rgba(210,197,139,1) 100%); /* ie10+ */
+	    background: linear-gradient(268deg, rgba(255,249,230,1) 10%, rgba(255,249,230,1) 83%, rgba(210,197,139,1) 100%); /* w3c */
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D2C58B', endColorstr='#FFF9E6',GradientType=1 ); /* ie6-9 */ 
+	}
+	thead{
+		background-color:#E6A879 !important;
+		color:white;
+	}
+	body #side-menu > .nav-header {
+    	height: 155px!important;
+    }
+    body.mini-navbar #side-menu > .nav-header {
+	    height: 60px!important;
+	}
+	.btn-navbar-guia {
+		width: 38px;
+		height: 30px;
+		padding: 0px 0px !important;
+		margin-top: -5px;
+		font-size: 16px !important;
+	}
+	.sidebar-collapse > .nav > li > a {
+		color: #864b48!important;
+	}
+	.sidebar-collapse > .nav > li.active {
+		border-left: 4px solid #67344e!important;
+		background: #fcf5df!important;
+	}
+	.sidebar-collapse > .nav > li > a:hover {
+		border-left: 0px!important;
+		background: #fcf5df!important;
+	}/*.navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus {*/
+	.navbar-top-links > li > a {
+	    color: #864b48 !important;
+	}
+	.navbar-top-links > li > a:hover {
+		border-left: 0px!important;
+	    color: #b09194 !important;
+	    background: #ffffff!important;
+	}
+	.panel-primary{
+		border-color:#8e5c64 !important;
+	}
+	.panel-primary > .panel-heading {
+		background-color: #8e5c64!important;
+		border-color: #8e5c64!important;
+	}
+	.nav-header {
+		background: url("inspinia/patterns/header-profile-SIIIS.png") no-repeat#8e5c64!important;
+		background-color: #3f1926!important;
+	}
+
+	/*NOTAS*/
+    .note-label {
+   		margin-left: 25px;
+   	}
+   	.note-area {
+   		resize: none;
+   		margin-left: 25px;
+   		width: 90%;
+   	}
+
+	/*COLORES DE LOS NUMEROS DE ESTADO*/
+	.color-number1{
+		color:#000000;
+	}
+	.color-number2{
+		color:#4acbed;
+	}
+	.color-number3{
+		color:#1c84c6;
+	}
+	.color-number4{
+		color:#9dc44c;
+	}
+	.color-number5{
+		color:#76549d;
+	}
+	.color-number6{
+		color:#f38728;
+	}
+	.color-number7{
+		color:#bf3b38;
+	}
+	.color-number8{
+		color:#c28e5b;
+	}
+	.color-number9{
+		color:#8f94a8;
+	}
+	.color-number10{
+		color:#729063;
+	}
+	.color-number11{
+		color:#964341;
+	}
+	.color-number12{
+		color:#fc946c;
+	}
+	.color-number13{
+		color:#df0303;
+	}
+	.color-number14{
+		color:#2c8c68;
+	}
+	.color-number15{
+		color:#993183;
+	}
+	.color-number16{
+		color:#63848c;
+	}
+	.color-number17{
+		color:#2a4b74;
+	}
+	.color-number18{
+		color:#7b5a5a;
+	}
+	.color-number19{
+		color:#df4488;
+	}
+	.color-number20{
+		color:#e8999d;
+	}
+	.color-number21{
+		color:#b68b4b;
+	}
+	.color-number22{
+		color:#5c7077;
+	}
+	.color-number23{
+		color:#9a9754;
+	}
+	.color-number24{
+		color:#706e6d;
+	}
+	.color-number25{
+		color:#bc8c96;
+	}
+	.color-number26{
+		color:#cccc00;
+	}
+	.color-number27{
+		color:#663366;
+	}
+
+	/*COLORES DE NIVEL*/
+	.nivel-optimo{
+		color:#8ee110;
+	}
+	.nivel-alerta{
+		color:#feb72a;
+	}
+	.nivel-critico{
+		color:#dc2715;
+	}
+	.nivel-extemporaneo{
+		color:#000000;
+	}
+
+	/*SPAN ROJO DE REQUERIDO EN FORMULARIOS*/
+	.requerido {
+		color: #F00;
+	}
+
+	.icon-flipped {
+	    transform: scaleX(-1);
+	    -moz-transform: scaleX(-1);
+	    -webkit-transform: scaleX(-1);
+	    -ms-transform: scaleX(-1);
+	}
+	
+	.ui-dialog{
+		z-index: 9999 !important;
+		padding: 0 !important;
+		border: none !important;
+		position: fixed !important;
+	}
+	.ui-dialog-titlebar{
+		background-color: #8b4f68 !important;
+		border-color: #8b4f68 !important;
+	}	
+	.ui-dialog .ui-dialog-content{
+		padding: 0 !important;
+	}	
+	.ui-widget.ui-widget-content{
+		border: 1px solid #000 !important;
+	}
+	.visorDocumentos .ui-resizable-handle {
+	    	background-color: transparent;
+	}	
+	.selectzindex{
+		z-index: 10000 !important;
+	}
+	.select2-container--default .select2-results>.select2-results__options{
+    max-height: 30vh !important;
+	}
+	/* Select2 custom styles */
+	.select2-container--default .select2-selection--single,
+	.select2-container--default .select2-selection--multiple {
+	  border-color: #e7eaec !important;
+	}
+	.select2-container--default.select2-container--focus .select2-selection--single,
+	.select2-container--default.select2-container--focus .select2-selection--multiple {
+	  border-color: #1ab394 !important;
+	}
+	.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	  background-color: #1ab394 !important;
+	}
+	.select2-container--default .select2-search--dropdown .select2-search__field {
+	  border-color: #e7eaec !important;
+	}
+	.select2-dropdown {
+	  border-color: #e7eaec !important;
+	}
+	.select2-dropdown input:focus {
+	  outline: none !important;
+	}
+	.select2-selection {
+	  outline: none !important;
+	}
+	.ui-select-container.ui-select-bootstrap .ui-select-choices-row.active > a {
+	  background-color: #1ab394 !important;
+	}
+	.select2-container--default .select2-selection--single {    
+    border-radius: 0px !important;    
+	}
+	.select2-container .select2-selection--single {    
+    height: inherit !important;    
+	}
+
+	li[aria-disabled=false] a{
+		background: #6fd1bd;
+  	color: #fff;
+	}  
+
+	.folder-list li {    
+    padding: 5px 0px;
+	}
+
+</style>

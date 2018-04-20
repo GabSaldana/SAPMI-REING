@@ -1,0 +1,24 @@
+    .estadoActual{
+        background-color: #A9D0F5;
+    }
+    .estadoActual:hover{
+        background-color: #AfD8F5;
+    }
+    .centrar{
+        text-align: center;
+    }
+    .estadoAntiguo{
+        background-color: #CEE3F6;
+    }
+    .estadoAntiguo:hover{
+        background-color: #d5EaFf;
+    }
+    .estadoRechazado{
+        background-color:  #F3E2A9;
+    }
+    .estadoNoRegistrado{
+        background-color: #e8e8e9;
+    }
+    .estadoNoRegistrado:hover{
+        background-color: #D6D6DA;
+    }

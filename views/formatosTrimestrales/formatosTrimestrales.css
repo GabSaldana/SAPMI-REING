@@ -1,0 +1,123 @@
+
+.el-contenido{
+	padding: 0;
+    border: 1px solid #d7dae5;
+    height: 140px;
+	overflow:hidden;
+}
+.div-descripcion{
+	padding: 5px;
+    padding-top: 10px;
+    position: relative;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #E7EAEC;
+    height: 140px;
+	width:60%;right:
+}
+.div-acciones{
+	position: relative;
+    background-color: #f8f8f9;
+    height: 140px;
+	width:40%;right:
+	overflow:hidden;
+	vertical-align:central;
+}
+.div-acciones:hover{
+	
+    background-color: #ffffff;
+}
+
+.div-botones{
+	position: relative;
+    height: 60px;
+	width:100%;
+}
+
+.el-vista-previa-rep{
+	text-align: center;
+    height: 140px;
+	width:50%;
+    color: #1ab394;
+}
+.el-vista-previa-rep:hover{
+    color: #007354;
+}
+
+.el-estado{
+	text-align: center;
+	height: 140px;
+	width:50%;
+    color: #489cd0;
+	overflow:hidden;
+}
+.el-estado:hover{
+    color: #287cb0;
+}
+
+.el-nombre{
+	font-size: 11px;
+    font-weight: bold;
+    color: #494D50;;
+    display: block;
+    margin: 2px 0 5px 0;
+    max-height: 95px;
+    overflow: auto;
+}
+.el-cont-desc{
+	font-size: 10px;
+	overflow:auto;
+}
+
+.el-leyenda{
+	font-size: 9px;
+	overflow:auto;
+	color: #999D90;
+	position:absolute;
+	top:120px;
+}
+.bt-superior{
+	font-size: 17px;
+    font-weight: 600;
+	float:right;
+    cursor: pointer;
+	margin:1px;
+    color: #ffffff;
+	
+}
+.el-eliminar{
+    background-color: #ed5565;
+    padding: 2px 8px;
+}
+.el-eliminar:hover{
+	background-color: #cd3545;
+}
+.el-copiar-rep{
+	background-color:#1ab394;
+    padding: 2px 6px;
+}
+.el-copiar-rep:hover{
+	background-color:#007354;
+}
+.el-validar{
+	background-color:rgba(28, 132, 198, 0.8);
+    padding: 2px 6px;
+}
+.el-validar:hover{
+	background-color:rgb(28, 132, 198);
+}
+.el-danger{
+	background-color:#f8ac59;
+    padding: 2px 6px;
+}
+.el-danger:hover{
+	background-color:#ba9c19;
+}
+.dropActive{
+    border: 2px solid #ffaaaa;
+}
+
+
+	.container{
+	width:100%;	
+	}

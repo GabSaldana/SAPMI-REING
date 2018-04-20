@@ -1,0 +1,18 @@
+{
+		"type": "msspline",
+		
+		
+		"width": "100%",
+		"height": "100%",
+		"dataFormat": "json",
+		"dataSource": {
+			"chart": {
+			 
+			  "theme": "zune"
+			},
+			"categories": [],
+			"dataset": []
+		}
+}
+	
+
