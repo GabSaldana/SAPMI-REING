@@ -25,8 +25,6 @@
     <script type="text/javascript" src="/includes/js/slick/slick.js"></script>
     <cfinclude template="login_js.cfm">
 
-    <!---SAPMI CIRCULO--->
-
 </head>
 <body class="white-bg">
 
@@ -220,30 +218,30 @@
                             <img src="/includes/img/login/menuPrincipal/mascara.png" border="0" usemap="#Map" 
                                 style="z-index:100px; position:relative; top:-794px;left:-15px;"/>
                             <map name="Map">
-                                <area class="areaMenu" shape="POLY" coords="212,4,369,74,277,160,210,136"    onClick="javascript:openVerde();"    href="#"     data-titulo="&Aacute;rea encargada de coordinar los procesos de planeaci&oacute;n estrat&eacute;gica de mediano y largo plazo." data-boton="btnVerde" 
-                                data-color="#8bbd1a"/>
+                                <area class="areaMenu" shape="POLY" coords="212,4,369,74,277,160,210,136"    onClick="javascript:openVerdeClaro();"    href="#"     data-titulo="&Aacute;rea encargada de coordinar los procesos de planeaci&oacute;n estrat&eacute;gica de mediano y largo plazo." data-boton="btnVerde" 
+                                data-color="#88BD1A"/>
                                 <area class="areaMenu" shape="POLY" coords="371,78,418,226,301,227,279,162"  onClick="openAmarillo();"            href="#" 
                                 data-titulo="&Aacute;rea encargada de coordinar la integraci&oacute;n de los programas anuales de trabajo y el programa operativo anual institucional para apoyar el cumplimiento de los objetivos institucionales." 
                                 data-boton="btnAmarillo" 
-                                data-color="#ab9e2c"/>
+                                data-color="#C2B52E"/>
                                 <area class="areaMenu" shape="POLY" coords="415,230,345,351,274,283,302,229"  onClick="javascript:openNaranja();"  href="#" data-titulo="&Aacute;rea encargada de realizar la asignaci&oacute;n de recursos federales y autogenerados de las unidades responsables para apoyar el cumplimiento de los objetivos institucionales." 
                                 data-boton="btnNaranja" 
-                                data-color="#db972a"/>
+                                data-color="#DB8323"/>
                                 <area class="areaMenu" shape="POLY" coords="342,354,210,399,210,310,269,287"  onClick="javascript:openRojo();"     href="#" data-titulo="SEGUIMIENTO A LOS PROCESOS DE GESTI&Oacute;N INSTITUCIONAL" 
                                 data-boton="btnRojo" 
-                                data-color="#ca4b3f"/>
-                                <area class="areaMenu" shape="POLY" coords="204,398,74,353,145,285,206,308"   onClick="javascript:openLila();"     href="#" data-titulo="&Aacute;rea encargada de planear, diseñar, dirigir y operar los Sistemas de Evaluaci&oacute;n e Informaci&oacute;n Institucionales a trav&eacute;s de la realizaci&oacute;n de estudios sobre el funcionamiento integral del Instituto." 
+                                data-color="#D73B26"/>
+                                <area class="areaMenu" shape="POLY" coords="204,398,74,353,145,285,206,308"   onClick="javascript:openGuinda();"     href="#" data-titulo="&Aacute;rea encargada de planear, diseñar, dirigir y operar los Sistemas de Evaluaci&oacute;n e Informaci&oacute;n Institucionales a trav&eacute;s de la realizaci&oacute;n de estudios sobre el funcionamiento integral del Instituto." 
                                 data-boton="btnGuinda" 
-                                data-color="#72142e"/>
-                                <area class="areaMenu" shape="POLY" coords="69,350,143,283,118,224,1,224"     onClick="javascript:openMorado();"   href="#" data-titulo="CAT&Aacute;LOGO DE REPORTES" 
+                                data-color="#851E3B"/>
+                                <area class="areaMenu" shape="POLY" coords="69,350,143,283,118,224,1,224"     onClick="javascript:openLila();"   href="#" data-titulo="CAT&Aacute;LOGO DE REPORTES" 
                                 data-boton="btnVioleta" 
-                                data-color="#733181"/>
-                                <area class="areaMenu" shape="POLY" coords="3,220,53,76,142,160,118,221"      onClick="javascript:openAzulMarino();" href="#" data-titulo="INFORMES DE LOS<BR>PROCESOS DE <BR>GESTI&Oacute;N INSTITUCIONAL" 
+                                data-color="#6E2E7C"/>
+                                <area class="areaMenu" shape="POLY" coords="3,220,53,76,142,160,118,221"      onClick="javascript:openMorado();" href="#" data-titulo="INFORMES DE LOS<BR>PROCESOS DE <BR>GESTI&Oacute;N INSTITUCIONAL" 
                                 data-boton="btnMarino" 
-                                data-color="#4247a9"/>
-                                <area class="areaMenu" shape="POLY" coords="52,73,208,6,207,133,143,158"      onClick="javascript:openAzulClaro();"   href="#" data-titulo="DATOS DE LOS<BR>RESPONSABLES<BR>DE LA DEPENDENCIA" 
+                                data-color="#6168B2"/>
+                                <area class="areaMenu" shape="POLY" coords="52,73,208,6,207,133,143,158"      onClick="javascript:openVerdeObscuro();"   href="#" data-titulo="DATOS DE LOS<BR>RESPONSABLES<BR>DE LA DEPENDENCIA" 
                                 data-boton="btnVerdeClaro" 
-                                data-color="#93a524"/>
+                                data-color="#607017"/>
                             </map>
                         </div>
                     </div>
