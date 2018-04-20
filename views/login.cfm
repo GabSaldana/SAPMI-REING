@@ -195,7 +195,7 @@
                 <div class="container text-center" style="margin-top:50px">
                     <div class="row">
                         <div class="col-xs-12 col-md-2 col-lg-2 vcenter subTitulo" id="txtModulo" 
-                        style="height:400px; padding-top: 10px; padding-bottom: 10px; background-color: red; margin-left: 70px;">
+                        style="height:400px; padding-top: 10px; padding-bottom: 10px; background-color: red; margin-left: 70px; text-align: justify;">
                             PROCESOS T&Eacute;CNICOS <BR>INSTITUCIONALES
                         </div>
                         <div class="col-xs-10 col-md-10 col-lg-10 vcenter" style="width:450px; height:430px; border:none; margin-left: 30px;">
