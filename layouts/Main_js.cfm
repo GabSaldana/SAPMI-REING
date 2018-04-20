@@ -604,4 +604,9 @@
             return true;
         }
     }
+
+    function agregaRuta(nombreURL){
+        window.location.href = nombreURL;
+    }
+
 </script>

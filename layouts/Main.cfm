@@ -2,7 +2,6 @@
 <cfprocessingdirective pageEncoding="utf-8"> 
 <html>
     <head>
-    	<!--- comentario de prueba --->
         <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <title>SIIIP | IPN</title>
@@ -130,6 +129,30 @@
 			        visibility: hidden;
 			    }
 			}
+
+			ul.breadcrumb {
+			    padding: 10px 16px;
+			    list-style: none;
+			    background-color: #eee;
+			}
+			ul.breadcrumb li {
+			    display: inline;
+			    font-size: 18px;
+			}
+			ul.breadcrumb li+li:before {
+			    padding: 8px;
+			    color: black;
+			    content: "/\00a0";
+			}
+			ul.breadcrumb li a {
+			    color: #0275d8;
+			    text-decoration: none;
+			}
+			ul.breadcrumb li a:hover {
+			    color: #01447e;
+			    text-decoration: underline;
+			}
+
 		</style>
 
     </head>
@@ -166,23 +189,36 @@
 
 		                </li>
 					    
-					    <cfloop index="x" from="1" to="#Session.cbstorage.menu.recordcount#">
-							<cfif ((#Session.cbstorage.menu.ICON[x]# NEQ '') AND (#Session.cbstorage.menu.URL[x]# NEQ ''))>
-								<li class="#event.getActiveLink('#Session.cbstorage.menu.URL[x]#')#">
-				                    <a href="#event.buildLink('#Session.cbstorage.menu.URL[x]#')#"><i class="#Session.cbstorage.menu.ICON[x]#"></i><span class="nav-label">#Session.cbstorage.menu.MODULO[x]#</span></a>
+					    <cfloop index="menulevel1" array="#Session.cbstorage.menu#">
+					    	<cfif arrayLen(menulevel1.NIVEL2) EQ 0>
+					    		<li class="#event.getActiveLink('#menulevel1.URL#')#">
+				                    <a href="#event.buildLink('#menulevel1.URL#')#"><i class="#menulevel1.ICONO#"></i><span class="nav-label">#menulevel1.NOMBRE#</span></a>
 				                </li>
-							<cfelseif (#Session.cbstorage.menu.ICON[x]# NEQ '')>
-								<li class="#event.getActiveLink('#Session.cbstorage.menu.URL[x]#')#">
-				                    <a><i class="#Session.cbstorage.menu.ICON[x]#"></i><span class="nav-label">#Session.cbstorage.menu.MODULO[x]#</span><span class="fa arrow"></span></a>
-				                    <ul class="nav nav-second-level">
-				                    	<cfloop index="m" from="1" to="#Session.cbstorage.menu.recordcount#">
-				                    		<cfif #Session.cbstorage.menu.CVE[x]# EQ #Session.cbstorage.menu.FK_MODULO[m]#>
-				                    			<li><a href="#event.buildLink('#Session.cbstorage.menu.URL[m]#')#">#Session.cbstorage.menu.MODULO[m]#</a></li>
-				                    		</cfif>
+					    	<cfelse>
+					    		<li class="#event.getActiveLink('#menulevel1.URL#')#">
+				                    <a onclick="agregaRuta('#event.buildLink('#menulevel1.URL#')#');"><i class="#menulevel1.ICONO#"></i><span class="nav-label">#menulevel1.NOMBRE#</span><span class="fa arrow"></span></a>
+				                    <ul class="nav">
+			                    		<cfloop index="menulevel2" array="#menulevel1.NIVEL2#">
+			                    			<cfif arrayLen(menulevel2.NIVEL3) EQ 0>
+			                    				<li class="#event.getActiveLink('#menulevel2.URL#')#">
+								                    <a href="#event.buildLink('#menulevel2.URL#')#"><i class="#menulevel2.ICONO#"></i><span class="nav-label">#menulevel2.NOMBRE#</span></span></a>
+								                </li>
+								            <cfelse>
+								               	<li class="#event.getActiveLink('#menulevel2.URL#')#">
+					                    			<a onclick="agregaRuta('#event.buildLink('#menulevel1.URL#')#');">#menulevel2.NOMBRE#</a>
+					                    			<ul class="nav">
+						                    			<cfloop index="menulevel3" array="#menulevel2.NIVEL3#">
+						                    				<li class="#event.getActiveLink('#menulevel3.URL#')#">
+						                    					<a href="#event.buildLink('#menulevel3.URL#')#"><i class="#menulevel3.ICONO#"></i><span class="nav-label">#menulevel3.NOMBRE#</span></a>
+						                    				</li>
+									                    </cfloop>
+								                    </ul>
+												</li>
+											</cfif>
 				                    	</cfloop>
 									</ul>
 				                </li>
-							</cfif>
+					    	</cfif>
 						</cfloop>
 		            </ul>
 		        </div>
@@ -286,6 +322,30 @@
 		                    </li>
 		                </ul>
 		            </nav>
+		            <cfoutput>
+			            <cfset evento = event.getCurrentView()>
+			            <cfset lista = evento.Split('/')>
+			            <cfset arreglo = ArrayNew(1)>
+			            <cfloop from="1" to="#ArrayLen(lista)#" index="cont">
+			            	<cfif NOT ((lista[cont] EQ "SAPMI") OR (cont EQ ArrayLen(lista)))>
+			            		<cfset arrayAppend(arreglo,lista[cont])>
+							</cfif>
+						</cfloop>
+			            <ul class="breadcrumb" id="rutaModuloSAPMI">
+			            	<cfif ArrayLen(lista) EQ 1>
+			            		<li>Inicio</li>
+			            	<cfelse>
+			            		<cfloop from="1" to="#ArrayLen(arreglo)#" index="elemento">
+				            		<cfif elemento EQ ArrayLen(arreglo)>
+				            			<li>#arreglo[elemento]#</li>
+				            		<cfelse>
+				            			<cfset ruta = 'SAPMI.' & arreglo[elemento]>
+				            			<li><a href="#event.buildLink('#ruta#')#">#arreglo[elemento]#</a></li>
+									</cfif>
+								</cfloop>
+							</cfif>
+						</ul>
+					</cfoutput>
 		        </div>
 		        <cfoutput>
 		           	#renderView()#
