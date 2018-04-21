@@ -189,7 +189,10 @@
 
 		                </li>
 					    
+					    <cfset cadenasPrimerNv = ArrayNew(1)>
+		                <cfset cadenasSegundoNv = ArrayNew(1)>
 					    <cfloop index="menulevel1" array="#Session.cbstorage.menu#">
+					    	<cfset arrayAppend(cadenasPrimerNv,menulevel1.URL)>
 					    	<cfif arrayLen(menulevel1.NIVEL2) EQ 0>
 					    		<li class="#event.getActiveLink('#menulevel1.URL#')#">
 				                    <a href="#event.buildLink('#menulevel1.URL#')#"><i class="#menulevel1.ICONO#"></i><span class="nav-label">#menulevel1.NOMBRE#</span></a>
@@ -199,6 +202,7 @@
 				                    <a onclick="agregaRuta('#event.buildLink('#menulevel1.URL#')#');"><i class="#menulevel1.ICONO#"></i><span class="nav-label">#menulevel1.NOMBRE#</span><span class="fa arrow"></span></a>
 				                    <ul class="nav">
 			                    		<cfloop index="menulevel2" array="#menulevel1.NIVEL2#">
+			                    			<cfset arrayAppend(cadenasSegundoNv,menulevel2.URL)>
 			                    			<cfif arrayLen(menulevel2.NIVEL3) EQ 0>
 			                    				<li class="#event.getActiveLink('#menulevel2.URL#')#">
 								                    <a href="#event.buildLink('#menulevel2.URL#')#"><i class="#menulevel2.ICONO#"></i><span class="nav-label">#menulevel2.NOMBRE#</span></span></a>
@@ -339,7 +343,21 @@
 				            		<cfif elemento EQ ArrayLen(arreglo)>
 				            			<li>#arreglo[elemento]#</li>
 				            		<cfelse>
-				            			<cfset ruta = 'SAPMI.' & arreglo[elemento]>
+				            			<cfif elemento EQ 1>
+				            				<cfloop array="#cadenasPrimerNv#" index="variable">
+				            					<cfif Find(arreglo[elemento],variable)>
+				            						<cfset ruta = variable>
+				            						<cfbreak>
+												</cfif>
+											</cfloop>
+				            			<cfelseif elemento EQ 2>
+				            				<cfloop array="#cadenasSegundoNv#" index="variable">
+				            					<cfif Find(arreglo[elemento],variable)>
+				            						<cfset ruta = variable>
+				            						<cfbreak>
+												</cfif>
+											</cfloop>
+										</cfif>
 				            			<li><a href="#event.buildLink('#ruta#')#">#arreglo[elemento]#</a></li>
 									</cfif>
 								</cfloop>

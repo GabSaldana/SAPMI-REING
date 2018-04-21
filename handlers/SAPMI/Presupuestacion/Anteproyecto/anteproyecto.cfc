@@ -7,7 +7,7 @@
 		<cfargument name="prc">
 		<cfargument name="event">
 		<cfscript>
-			event.setView("SAPMI/Presupuestacion/Anteproyecto/anteproyecto/principal");
+			event.setView("SAPMI/Presupuestacion/Anteproyecto/principal");
 		</cfscript>
 	</cffunction>
 
