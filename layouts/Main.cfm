@@ -56,8 +56,6 @@
 		<script type="text/javascript" src="/includes/js/jquery/nestable/jquery.nestable.js"></script>
 		<script type="text/javascript" src="/includes/js/jquery/jquery-block-ui/jquery.blockUI.js"></script>	
 	
-
-		
 		<!--- Bootstrap --->
 		<script type="text/javascript" src="/includes/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="/includes/bootstrap/bootstrap-select/bootstrap-select.min.js"></script>
@@ -185,7 +183,7 @@
 	                            <input type="hidden" id="pkeval" value="'#Session.cbstorage.usuario.PK#'">
 		                    </div>
 
-		                    <div class="logo-element">SIIIP</div>
+		                    <div class="logo-element">SAPMI</div>
 
 		                </li>
 					    
@@ -209,7 +207,7 @@
 								                </li>
 								            <cfelse>
 								               	<li class="#event.getActiveLink('#menulevel2.URL#')#">
-					                    			<a onclick="agregaRuta('#event.buildLink('#menulevel1.URL#')#');">#menulevel2.NOMBRE#</a>
+					                    			<a onclick="agregaRuta('#event.buildLink('#menulevel2.URL#')#');">#menulevel2.NOMBRE#</span><span class="fa arrow"></span></a>
 					                    			<ul class="nav">
 						                    			<cfloop index="menulevel3" array="#menulevel2.NIVEL3#">
 						                    				<li class="#event.getActiveLink('#menulevel3.URL#')#">

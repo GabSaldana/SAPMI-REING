@@ -59,6 +59,7 @@
 								<cfset contenido.url = menuRol.URL[auxiliarIndex]>
 								<cfset contenido.icono = menuRol.ICON[auxiliarIndex]>
 								<cfset contenido.nombre = menuRol.MODULO[auxiliarIndex]>
+								<cfset contenido.nivel = menuRol.NIVEL[auxiliarIndex]>
 								<cfset arrayAppend(menuNivel3,StructCopy(contenido))>
 								<cfset StructClear(contenido)>
 							</cfloop>
@@ -68,6 +69,7 @@
 						<cfset contenido.url = menuRol.URL[auxiliarIndex]>
 						<cfset contenido.icono = menuRol.ICON[auxiliarIndex]>
 						<cfset contenido.nombre = menuRol.MODULO[auxiliarIndex]>
+						<cfset contenido.nivel = menuRol.NIVEL[auxiliarIndex]>
 						<cfset arrayAppend(menuNivel2,StructCopy(contenido))>
 						<cfset StructClear(contenido)>
 						<cfset ArrayClear(menuNivel3)>
@@ -77,6 +79,7 @@
 				<cfset contenido.url = menuRol.URL[menu]>
 				<cfset contenido.icono = menuRol.ICON[menu]>
 				<cfset contenido.nombre = menuRol.MODULO[menu]>
+				<cfset contenido.nivel = menuRol.NIVEL[menu]>
 				<cfset arrayAppend(menuFinal,StructCopy(contenido))>
 				<cfset StructClear(contenido)>
 			<cfelse>

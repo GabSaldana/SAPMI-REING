@@ -26,7 +26,7 @@
     <cfinclude template="login_js.cfm">
 
 </head>
-<body class="white-bg">
+<body class="white-bg" style="overflow: hidden;">
 
 	<style>
 		.imgCarrusel {
@@ -276,14 +276,14 @@
                         </cfoutput>
                         <div>
                         	<p class="text-justify">
-                        		Algun texto de ayuda <a href="<cfoutput>#event.buildLink("CVU.registro.investigadorNumEmpleado")#</cfoutput>">este enlace.</a>
+                        		Si quieres saber más a cerca de las direcciones consulta <a href="http://www.gestionestrategica.ipn.mx/Conocenos/Paginas/Planeacion/MisionVision.aspx">este enlace.</a>
                         	</p>
 							<p class="text-justify">
-								Algun link a <a>este enlace.</a>
+								Si quieres saber más sobre el sistema SAPMI consulta <a href="http://www.csii.ipn.mx/Sistemas-de-Informacion/Paginas/SAPMI.aspx" >este enlace.</a>
 							</p>
-							<p class="text-justify">
+							<!---<p class="text-justify">
 								Usted esta accesando al sistema de forma segura.<a href="<cfoutput>#event.buildLink("CVU.registro.investigadorSinNumEmpleado")#</cfoutput>">este enlace.</a>
-							</p>
+							</p>--->
 						</div> 
                     </div>
                 </div>
