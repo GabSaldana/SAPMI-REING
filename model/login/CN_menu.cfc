@@ -12,6 +12,10 @@
 <cfcomponent>
 	
 	<!---
+	*Modificacion: Creacion de un menu dinamico con base en relaciones jerarquicas (maximo 3 niveles)
+	Fecha: 24/04/2018
+	Autor: Marco Rodriguez
+	-----------------------------------------------------------
 	* Fecha creacion: agosto, 2016
 	* @author Yareli Andrade
 	--->    
@@ -44,7 +48,6 @@
 		<cfloop index="menu" from="1" to="#menuRol.recordcount#">
 			<cfif menuRol.NIVEL[menu] EQ 1>
 				<cfset ArrayClear(menuNivel2)>
-				<cfset ArrayClear(menuNivel3)>
 				<cfset auxLevel2 = ArrayFindAll(arrayLev2,menuRol.CVE[menu])>
 				<cfif ArrayLen(auxLevel2) GT 0>
 					<cfloop array="#auxLevel2#" index="nivel2">
@@ -67,6 +70,7 @@
 						<cfset contenido.nombre = menuRol.MODULO[auxiliarIndex]>
 						<cfset arrayAppend(menuNivel2,StructCopy(contenido))>
 						<cfset StructClear(contenido)>
+						<cfset ArrayClear(menuNivel3)>
 					</cfloop>
 				</cfif>
 				<cfset contenido.nivel2 = menuNivel2>
