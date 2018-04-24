@@ -207,7 +207,7 @@
 								                </li>
 								            <cfelse>
 								               	<li class="#event.getActiveLink('#menulevel2.URL#')#">
-					                    			<a onclick="agregaRuta('#event.buildLink('#menulevel2.URL#')#');">#menulevel2.NOMBRE#</span><span class="fa arrow"></span></a>
+					                    			<a onclick="agregaRuta('#event.buildLink('#menulevel2.URL#')#');"><i class="#menulevel2.ICONO#"></i><span class="nav-label">#menulevel2.NOMBRE#</span><span class="fa arrow"></span></a>
 					                    			<ul class="nav">
 						                    			<cfloop index="menulevel3" array="#menulevel2.NIVEL3#">
 						                    				<li class="#event.getActiveLink('#menulevel3.URL#')#">

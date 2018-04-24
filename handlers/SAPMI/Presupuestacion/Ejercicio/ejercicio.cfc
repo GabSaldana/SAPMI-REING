@@ -1,7 +1,5 @@
 <cfcomponent>
 
-	<!---<cfproperty name="CN" 	  inject="EDI.CN_evaluacion">--->
-
 	<cffunction name="index" hint="Funcion principal del modulo de evaluacion">
 		<cfargument name="rc">
 		<cfargument name="prc">
