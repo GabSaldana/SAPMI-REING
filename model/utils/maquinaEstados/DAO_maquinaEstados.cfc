@@ -45,7 +45,7 @@
         <cfset esquema     = qTablaModificacion.ESQUEMA[1]>
         <cfquery name="qEstadoActual" datasource="DS_#esquema#">
             SELECT  #campoEstado# ESTADO,
-	                EDO.CER_NUMERO_ESTADO NOM_EDO,
+	                EDO.CER_NUMERO_ESTADO NUM_EDO,
 	                EDO.CER_FK_RUTA AS RUTA
               FROM  #tabla# TEMP,
                     GRAL.CESCESTADO EDO
@@ -61,7 +61,8 @@
     * @author Alejandro Tovar
     * Descripcion: Función que obtiene las acciones disponibles en dicho procedimiento.
     --->
-    <cffunction name="getAllAcciones" hint="Obtiene los datos de la tabla a modificar.">
+    <cffunction name="getAllAcciones" hint="Obtiene los datos de la tabla a modificar.Trae lod datos de las acciones en su estado actual
+    del rol X para una ruta perteneciente a un procedimiento X.">
         <cfargument name="procedimiento" type="numeric" required="yes" hint="pk del procedimiento">
         <cfargument name="rol"           type="numeric" required="yes" hint="pk del rol">
         <cfargument name="getEliminados" type="boolean" required="false" default="false" hint="pk del rol">
@@ -89,7 +90,9 @@
                              GRAL.USRTACCION        TAC
                         WHERE
                             REA.REA_FK_ACCION_ROL = RAR.RAR_PK_ACCIONROL
-                            AND RAR.RAR_FK_ROL = #rol#
+                            <cfif rol>
+                                AND RAR.RAR_FK_ROL = #rol#
+                            </cfif>
                             AND RAR.RAR_FK_ACCION = TAC.TAC_PK_ACCION
 							AND RAR.RAR_FK_ESTADO > 0
                    			AND REA.REA_FK_ESTADO > 0
@@ -103,6 +106,7 @@
 					<cfif not getEliminados>
 					AND	CER2.CER_NUMERO_ESTADO > 0
 					</cfif>
+                 AND TABACCIONES.PKACCIONES IS NOT NULL
             ORDER BY PKACCIONES
         </cfquery>
 		<cfreturn qResult>

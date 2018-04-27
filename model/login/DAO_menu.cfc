@@ -47,8 +47,8 @@
         <cfargument name="rol" type="numeric" required="yes" hint="Rol del usuario">
         <cfquery name="qPermisos" datasource="DS_GRAL">
             SELECT  TMOD.TMO_MODULO_NOMBRE MODULO,
-                TACC.TAC_ACCION_NOMBRE ACCION,
-                TAC_ACCION_CLAVE CLAVE
+                    TACC.TAC_ACCION_NOMBRE ACCION,
+                    TACC.TAC_ACCION_CLAVE CLAVE
             FROM
                 USRRACCIONROL TROL,
                 USRTMODULO TMOD,

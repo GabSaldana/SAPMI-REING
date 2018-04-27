@@ -83,13 +83,13 @@
     			dao.cambiarEstado(pkRegistro, cambio.CAMBIOEDO[1],pkProced);
 
     			// REGISTRA EL CAMBIO DE ESTADO EN LA TABLA CESBHISTORIAL.
-    			registro =  dao.registrarCambioEstado(pkProced, cambio.EDOACTUAL[1], cambio.CAMBIOEDO[1], pkRegistro, Session.cbstorage.usuario.PK, nombreAccion,iconoAccion);
-
-                if (cambio.NOM_EDO_SIG[1] LT estadoActual.NOM_EDO[1]){
+    			//registro =  dao.registrarCambioEstado(pkProced, cambio.EDOACTUAL[1], cambio.CAMBIOEDO[1], pkRegistro, Session.cbstorage.usuario.PK, nombreAccion,iconoAccion);
+                
+                if (cambio.NOM_EDO_SIG[1] LT estadoActual.NUM_EDO[1]){
                     respuesta.retroceso = true;
                 }
 
-                respuesta.pkBitacora = registro;
+                //respuesta.pkBitacora = registro;
                 respuesta.edoOrigen  = cambio.EDOACTUAL[1];
                 respuesta.edoDestino = cambio.CAMBIOEDO[1];
                 respuesta.fallo      = false; 

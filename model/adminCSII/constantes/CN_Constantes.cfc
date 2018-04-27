@@ -17,7 +17,14 @@
         this.ESTADO.SOLICITUDENVIADASIP                     = 211;
         this.ESTADO.APLICO_RI							    = 290;
         this.ESTADO.SOLICITUD_ATENDIDA                      = 289;
-        
+
+        /*********************************SAPMI*******************************************/
+        this.ESTADO.ELIMINADO                               = 315;
+        this.ESTADO.CAPTURA                                 = 319;
+        this.ESTADO.VALIDADO_POR_RESPONSABLE                = 320;
+        this.ESTADO.VALIDADO_POR_LA_DIRECCION               = 322;
+        /****************************************************************************/
+
         this.FUNCIONPRUEBA                                  = structNew();
         this.FUNCIONPRUEBA.V_EDO                            = 'VERIFICAR_ESTADO';
         this.FUNCIONPRUEBA.V_DIR                            = 'VERIFICAR_DIRECTOR';
@@ -48,6 +55,7 @@
         this.PROCEDIMIENTO.EVAL_EDI                         = 85;
         this.PROCEDIMIENTO.SOLI_EDI                         = 86;        
         this.PROCEDIMIENTO.EVAL_ESCOLARIDAD                 = 105;
+        this.PROCEDIMIENTO.EVALUACION_INDICADORES           = 115;
 
         this.TABLA_CAMBIO                                   = structNew();
         this.TABLA_CAMBIO.TABLA_DOC                         = 'DOCTARCHIVOS';
