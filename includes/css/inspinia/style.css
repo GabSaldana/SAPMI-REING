@@ -38,8 +38,9 @@ h3, h4, h5 {
 .nav > li.active > a {
   color: #ffffff; }
 
+/*navbar hover*/
 .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus {
-  background-color: #002e26;
+  background-color: #0D47A1;
   color: white; }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
@@ -149,16 +150,18 @@ h3, h4, h5 {
 .nav.navbar-top-links .dropdown-alerts a {
   font-size: 12px; }
 
+/*Color de la seccion del perfil*/
 .nav-header {
   padding: 33px 25px;
-  background-color: #00695c; }
+  background-color: #5B9BD5; }
 
 .pace-done .nav-header {
   transition: all 0.4s; }
 
+/*Color de la barra izquierda de los elementos del menu lateral*/
 .nav > li.active {
   border-left: 4px solid #00b59c;
-  background: #002e26; }
+  background: #0070C0; }
 
 .nav.nav-second-level > li.active {
   border: none; }
@@ -167,7 +170,7 @@ h3, h4, h5 {
   height: auto !important; }
 
 .nav-header a {
-  color: #DFE4ED; }
+  color: white; }
 
 .nav-header .text-muted {
   color: #8095a8; }
@@ -380,6 +383,7 @@ body.mini-navbar .logo-element {
 body.canvas-menu .logo-element {
   display: none; }
 
+/*Color del mini nav*/
 body.mini-navbar .nav-header {
   padding: 0;
   background-color: #00bfa5; }
@@ -605,10 +609,12 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 .btn-danger.btn-outline:hover {
   color: #fff; }
 
+/*boton collapse y de asistencia***/
 .btn-primary {
   background-color: #00bfa5;
   border-color: #00bfa5;
-  color: #FFFFFF; }
+  color: #FFFFFF; 
+}
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:hover, .btn-primary.active:focus {
   background-color: #00b098;
@@ -3037,9 +3043,10 @@ body.tour-open .animated {
   padding: 15px 20px;
   border-bottom: 1px solid #e7eaec; }
 
+/*Color de la seccion del menu lateral*/
 body {
   font-family: "Roboto", "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #00695c;
+  background-color: #5B9BD5;
   font-size: 13px;
   color: #676a6c;
   overflow-x: hidden; }

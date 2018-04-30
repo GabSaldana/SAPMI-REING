@@ -26,10 +26,9 @@
 			<div class="ibox">
 			    <div class="ibox-title">
 					<h1>M&oacute;dulo de Indicadores </h1>
-					<h3><cfoutput>Rol: #Session.cbstorage.usuario.rol#</cfoutput></h3>
 					<cfif arrayFind(session.cbstorage.grant,'Indicadores.capturar')>
 						<div class="col-md-4">
-							<button class="btn btn-primary btn-outline pull-left dim bt-nuevoRep"><i class="fa fa-magic"></i> Capturar Indicador</button>
+							<button class="btn btn-primary btn-outline pull-left dim "><i class="fa fa-magic"></i> Capturar Indicador</button>
 						</div>
 					</cfif>
 				</div>
@@ -55,7 +54,7 @@
 									#CLAVE#
 								</td>
 			                	<td>			             	
-				                	<a title="Consultar historial" onclick="consultaHistorial(#pk#,1);">			
+				                	<a title="Consultar historial" onclick="">			
 				                    <span class="fa-stack text-info" style="font-size:15px">
 											<i class="fa fa-circle-o fa-stack-2x"></i>
 									  		<strong class="fa-stack-1x guiaHistorial">#NUMEDO#</strong>
@@ -72,22 +71,22 @@
 			                	<td>
 				                   <!---ACCIONES PARA EL AUXILIAR--->
 				                   <cfif listFind(ACCIONESCVE,'Indicadores.editar','$')>
-										<button class="btn btn-sm btn-primary guiaEditar" onclick="capturarFormato(#pk#);" title=" Editar Indicador"><i class="fa fa-pencil  fa-fw"></i>
+										<button id="edicion" class="btn btn-sm btn-primary dim guiaEditar" onclick="" title=" Editar Indicador"><i class="fa fa-pencil  fa-fw"></i>
 										</button>
 									</cfif>
 				                    <!---ACCIONES PARA EL RESPONSABLE CGET--->
 				                    <cfif listFind(ACCIONESCVE,'Indicadores.validar','$')>							
-										<button class="btn btn-sm btn-success guiaValidar"  title="Validar indicador" onclick="cambiarEstadoFT(#pk#,'Indicadores.validar','Validar Indicador');"><i class="fa fa-thumbs-o-up  fa-fw"></i> 
+										<button class="btn btn-sm btn-success dim guiaValidar"  title="Validar indicador" onclick="cambiarEstadoFT(#pk#,'Indicadores.validar','Validar Indicador');"><i class="fa fa-thumbs-o-up  fa-fw"></i> 
 			                    		</button>
 			                    	</cfif>
 			                    	<cfif listFind(ACCIONESCVE,'Indicadores.eliminar','$')>
-				                    	<button class="btn btn-sm btn-danger guiaEliminar"  title="Eliminar Indicador" onclick="cambiarEstadoFT(#pk#,'Indicadores.eliminar','Eliminar Indicador);">
+				                    	<button class="btn btn-sm btn-danger dim guiaEliminar"  title="Eliminar Indicador" onclick="cambiarEstadoFT(#pk#,'Indicadores.eliminar','Eliminar Indicador);">
 			                    			<i class="fa fa-trash fa-fw"></i>  
 			                    		</button>
 				                    </cfif>
 				                    <!---ACCIONES PARA EL ANALISTA--->
 				                    <cfif listFind(ACCIONESCVE,'Indicadores.rechazar','$')>								
-										<button class="btn btn-sm btn-success guiaRechazar"  title="Rechazar indicador" onclick="cambiarEstadoFT(#pk#,'Indicadores.rechazar','Rechazar Indicador');"><i class="fa fa-thumbs-o-down  fa-fw"></i> 
+										<button class="btn btn-sm btn-success dim guiaRechazar"  title="Rechazar indicador" onclick="cambiarEstadoFT(#pk#,'Indicadores.rechazar','Rechazar Indicador');"><i class="fa fa-thumbs-o-down  fa-fw"></i> 
 			                    		</button>
 			                    	</cfif>
 					    		</td>
@@ -107,11 +106,11 @@
 	</div>
 </div>
 
-<cfoutput>
+<!---<cfoutput>
 	<cfdump var="#Session#">
 	<cfdump var="#prc#">
 	<cfdump var="#application#">
-</cfoutput>
+</cfoutput>--->
 <script>	
 	
 	$(document).ready(function() {

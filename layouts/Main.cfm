@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <title>SIIIP | IPN</title>
+	    <title>IPN | SAPMI</title>
 
 	    <!-- Hojas de estilo -->
 	    <link rel="stylesheet" href="/includes/css/plugins/toastr/toastr.min.css"> <!--- DEBE PONERSE ANTES DE INSPINIA --->
@@ -151,8 +151,39 @@
 			    text-decoration: underline;
 			}
 
-		</style>
+			/*Colores primarios paea SAPMI*/
+			
+			.btn-primary.btn-outline {
+				color: #23c6c8;
+			}
 
+			button.btn-primary.dim {
+			    box-shadow: inset 0 0 0 #4AD8E5, 0 2px 0 0 #23c6c8, 0 5px 3px #999;
+			}
+
+			.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:hover, .btn-primary.active:focus {
+				  background-color: #4AD8E5;
+				  border-color: #4AD8E5;
+				  color: #FFFFFF; 
+			}
+
+			.nav > li.active {
+			  border-left: 4px solid #4AD8E5;
+			  background: #0070C0; 
+			}
+
+			#collapsebars {
+				background-color: #4AD8E5;
+				border-color: transparent;
+  				color: #FFFFFF; 
+			}
+
+			body.mini-navbar .nav-header {
+			  padding: 0;
+			  background-color: #4AD8E5; 
+			}
+
+		</style>
     </head>
 
     <body>
@@ -277,7 +308,7 @@
 		        <div class="row border-bottom">
                 	<nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
 		                <div class="navbar-header col-lg-1">
-		                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary "><i class="fa fa-bars"></i> </a>
+		                    <a id="collapsebars" class="navbar-minimalize minimalize-styl-2 btn btn-primary "><i class="fa fa-bars"></i> </a>
 		                </div>						
 
 						<ul class="nav navbar-top-links navbar-left">

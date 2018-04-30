@@ -1,7 +1,7 @@
 <h1>M&oacute;dulo del FODA </h1>
-<h3><cfoutput>Rol: #Session.cbstorage.usuario.rol#</cfoutput></h3>
+<!---<h3><cfoutput>Rol: #Session.cbstorage.usuario.rol#</cfoutput></h3>
 <p>Acciones:</p>
-<cfif ArrayFind(Session.cbstorage.grant,'Planeacion.muestra')>
+<cfif ArrayFind(Session.cbstorage.grant,'Indicadores.validar')>
 	<button type="button" class="btn btn-success">Muestra</button>
 </cfif>
 
@@ -12,4 +12,4 @@
 <cfoutput>
 	<cfdump var="#Session#">
 	<cfdump var="#prc#">
-</cfoutput>
+</cfoutput>--->

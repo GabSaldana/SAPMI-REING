@@ -866,7 +866,7 @@
 			var pkUsuario = '';
 			var UR = '';
 			/*EN CASO DE NO TENER EL PRIVILEGIO PARA VER TODOS LOS REPORTES SE ENVIA EL VALOR DE LA UR DE LA SESSION*/
-			if(NOT arraycontains(session.cbstorage.grant,'configFT.verTodos')){
+			if(NOT arraycontains(session.cbstorage.grant,'Indicadores.verTodos')){
 				pkUsuario = session.cbstorage.usuario.PK;
 			}
 			/*EN CASO DE NO TENER EL PRIVILEGIO PARA VER TODOS LOS REPORTES SE ENVIA EL VALOR DE LA UR DE LA SESSION*/
@@ -874,8 +874,8 @@
 				//UR = session.cbstorage.usuario.UR;
 			}
 
-			VAR formatos =dao.getFormatos(pkUsuario,UR);
-			return cnMes.getQueryAcciones(1, formatos, rol);
+			var formatos =dao.getFormatos(pkUsuario,UR);
+			return cnMes.getQueryAcciones(115, formatos, 1);
 		</cfscript>
 	</cffunction>
 	

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPN | SIIIP</title>
+    <title>IPN | SAPMI</title>
 
     <!--- Hojas de estilo ---> 
     <link rel="stylesheet" href="/includes/css/plugins/toastr/toastr.min.css">
@@ -167,7 +167,7 @@
             <div class="col-md-4 tituloIPN">
                 Instituto Politécnico Nacional<br>
                 "La Técnica al Servicio de la Patria"<br>
-                Secretaría de Investigación y Posgrado
+                Secretaría de Gestión Estratégica
             </div>
             <div class="col-md-5 col-md-offset-1 tituloSIIIP text-right">
                 Sistema de Administracion para <br>
